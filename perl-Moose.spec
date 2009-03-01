@@ -7,18 +7,18 @@
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	0.68
+Version:	0.72
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/D/DR/DROLSKY/%{pdir}-%{version}.tar.gz
-# Source0-md5:	8710e35012924f8d49b0f5ba994e328c
+# Source0-md5:	b78fef11546371f33b99e61fd4c4f5c0
 URL:		http://www.iinteractive.com/moose/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Class-MOP >= 0.59
+BuildRequires:	perl-Class-MOP >= 0.77_01
 BuildRequires:	perl-Scalar-List-Utils >= 1.18
 BuildRequires:	perl-Sub-Exporter >= 0.972
 BuildRequires:	perl-Test-Exception >= 0.21
@@ -49,6 +49,7 @@ Moose to rozszerzenie systemu obiektowego Perla 5
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/MooseX
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -62,6 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Moose.pm
 %{perl_vendorlib}/oose.pm
 %{perl_vendorlib}/Moose
+%{perl_vendorlib}/MooseX
 %{perl_vendorlib}/Test/Moose.pm
 %{_mandir}/man3/Moose*.3pm*
 %{_mandir}/man3/Test::Moose.3pm*
