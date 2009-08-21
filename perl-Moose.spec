@@ -9,25 +9,37 @@ Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
 Version:	0.81
 Release:	1
-# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/D/DR/DROLSKY/%{pdir}-%{version}.tar.gz
-# Source0-md5:	7fe95bd9db76494340e87338e3d86899
+# Source0-md5:  7fe95bd9db76494340e87338e3d86899
 URL:		http://www.iinteractive.com/moose/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Class-MOP >= 0.77_01
-BuildRequires:	perl-Scalar-List-Utils >= 1.18
+BuildRequires:	perl(DBM::Deep) >= 1.0003
+BuildRequires:	perl(DateTime)
+BuildRequires:	perl(DateTime::Calendar::Mayan)
+BuildRequires:	perl(DateTime::Format::MySQL)
+BuildRequires:	perl(Declare::Constraints::Simple)
+BuildRequires:	perl(HTTP::Headers)
+BuildRequires:	perl(Locale::US)
+BuildRequires:	perl(Module::Refresh)
+BuildRequires:	perl(Params::Coerce)
+BuildRequires:	perl(Regexp::Common)
+BuildRequires:	perl(Test::Deep)
+BuildRequires:	perl(Test::Output)
+BuildRequires:	perl(URI)
+BuildRequires:	perl-Class-MOP >= 0.85
+BuildRequires:	perl-Data-OptList
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
+BuildRequires:	perl-List-MoreUtils >= 0.12
 BuildRequires:	perl-Sub-Exporter >= 0.972
-BuildRequires:	perl-Test-Exception >= 0.21
-BuildRequires:	perl-Test-LongString
-BuildRequires:	perl-Test-Simple >= 0.62
+BuildRequires:	perl-Sub-Name
+BuildRequires:	perl-Task-Weaken
+BuildRequires:	perl-Test-Exception >= 0.27
+BuildRequires:	perl-Test-Simple >= 0.77
 %endif
-Requires:	perl-Class-MOP >= 0.59
-Requires:	perl-Scalar-List-Utils >= 1.18
-Requires:	perl-Sub-Exporter >= 0.972
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
