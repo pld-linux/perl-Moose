@@ -34,6 +34,7 @@ BuildRequires:	perl(URI)
 BuildRequires:	perl-Class-MOP >= 0.98
 BuildRequires:	perl-Data-OptList
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
+BuildRequires:	perl-IO-String
 BuildRequires:	perl-List-MoreUtils >= 0.12
 BuildRequires:	perl-Sub-Exporter >= 0.980
 BuildRequires:	perl-Sub-Name
