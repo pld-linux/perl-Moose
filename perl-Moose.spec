@@ -7,12 +7,12 @@
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	0.92
+Version:	0.98
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{pdir}-%{version}.tar.gz
-# Source0-md5:	c6dfb7bc8b3ae2bb677e0ce53818348e
+Source0:	http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/%{pdir}-%{version}.tar.gz
+# Source0-md5:	c040bde14d843ea09a0d138b25642f42
 URL:		http://www.iinteractive.com/moose/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -31,7 +31,7 @@ BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl(Test::Output)
 BuildRequires:	perl(Try::Tiny) >= 0.02
 BuildRequires:	perl(URI)
-BuildRequires:	perl-Class-MOP >= 0.94
+BuildRequires:	perl-Class-MOP >= 0.98
 BuildRequires:	perl-Data-OptList
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
 BuildRequires:	perl-List-MoreUtils >= 0.12
@@ -41,7 +41,6 @@ BuildRequires:	perl-Task-Weaken
 BuildRequires:	perl-Test-Exception >= 0.27
 BuildRequires:	perl-Test-Simple >= 0.77
 %endif
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -73,11 +72,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/Moose.pm
-%{perl_vendorlib}/oose.pm
-%{perl_vendorlib}/Moose
-%{perl_vendorlib}/MooseX
-%{perl_vendorlib}/Test/Moose.pm
+%{perl_vendorarch}/*.pm
+%{perl_vendorarch}/%{pdir}
+%{perl_vendorarch}/Test/*.pm
+%dir %{perl_vendorarch}/auto/%{pdir}
+%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/*.so
 %{_mandir}/man3/Moose*.3pm*
 %{_mandir}/man3/Test::Moose.3pm*
 %{_mandir}/man3/oose.3pm*
