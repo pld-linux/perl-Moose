@@ -7,18 +7,19 @@
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	2.0604
+Version:	2.0802
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/CPAN/authors/id/D/DO/DOY/%{pdir}-%{version}.tar.gz
-# Source0-md5:	f1c9c27ad9effd35e3597d3c2faca214
+Source0:	http://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
+# Source0-md5:	0e20adbf04d229465a91d5b6122a7bb7
 URL:		http://www.iinteractive.com/moose/
 BuildRequires:	perl-Dist-CheckConflicts >= 0.02
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
 BuildRequires:	perl-devel >= 1:5.8.3
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(Carp) >= 1.22
 BuildRequires:	perl-Class-Load >= 0.09
 BuildRequires:	perl-Class-Load-XS >= 0.01
 BuildRequires:	perl-DBM-Deep >= 1.0003
@@ -42,6 +43,7 @@ BuildRequires:	perl-Package-Stash-XS >= 0.24
 BuildRequires:	perl-Params-Coerce
 BuildRequires:	perl-Params-Util >= 1.00
 BuildRequires:	perl-Regexp-Common
+BuildRequires:	perl-Scalar-List-Utils >= 1.19
 BuildRequires:	perl-Sub-Exporter >= 0.980
 BuildRequires:	perl-Sub-Name >= 0.05
 BuildRequires:	perl-Task-Weaken
@@ -138,7 +140,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes README.md TODO
 %attr(755,root,root) %{_bindir}/moose-outdated
 %{perl_vendorarch}/Class/MOP.pm
 %{perl_vendorarch}/Class/MOP
