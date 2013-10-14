@@ -20,6 +20,7 @@ BuildRequires:	perl-devel >= 1:5.8.3
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Carp) >= 1.22
+BuildRequires:	perl-CPAN-Meta-Check >= 0.007
 BuildRequires:	perl-Class-Load >= 0.09
 BuildRequires:	perl-Class-Load-XS >= 0.01
 BuildRequires:	perl-DBM-Deep >= 1.0003
@@ -47,15 +48,15 @@ BuildRequires:	perl-Scalar-List-Utils >= 1.19
 BuildRequires:	perl-Sub-Exporter >= 0.980
 BuildRequires:	perl-Sub-Name >= 0.05
 BuildRequires:	perl-Task-Weaken
-BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-CheckDeps >= 0.007
+BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-Fatal >= 0.001
 BuildRequires:	perl-Test-Inline
 BuildRequires:	perl-Test-NoTabs
 BuildRequires:	perl-Test-Output >= 0.01
 BuildRequires:	perl-Test-Pod-Coverage >= 1.04
 BuildRequires:	perl-Test-Requires >= 0.05
-BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Test-Simple >= 0.94
 BuildRequires:	perl-Test-Spelling
 BuildRequires:	perl-Try-Tiny >= 0.02
 BuildRequires:	perl-URI
