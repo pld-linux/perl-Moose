@@ -153,7 +153,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/metaclass.pm
 %{perl_vendorarch}/oose.pm
 %dir %{perl_vendorarch}/auto/Moose
-%{perl_vendorarch}/auto/Moose/Moose.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Moose/Moose.so
 %{_mandir}/man3/Class::MOP*.3pm*
 %{_mandir}/man3/Moose*.3pm*
