@@ -7,12 +7,12 @@
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	2.1005
-Release:	4
+Version:	2.1403
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
-# Source0-md5:	8878c5b28ee5312c31983f2de3167db1
+# Source0-md5:	1fa5fed0755cb272a21ff95f447d2681
 URL:		http://www.iinteractive.com/moose/
 BuildRequires:	perl-Dist-CheckConflicts >= 0.02
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
@@ -30,6 +30,7 @@ BuildRequires:	perl-DateTime-Calendar-Mayan
 BuildRequires:	perl-DateTime-Format-MySQL >= 0.01
 BuildRequires:	perl-Declare-Constraints-Simple
 BuildRequires:	perl-Devel-GlobalDestruction
+BuildRequires:	perl-Devel-OverloadInfo
 BuildRequires:	perl-Eval-Closure >= 0.04
 BuildRequires:	perl-File-Find-Rule
 BuildRequires:	perl-IO-String >= 0.01
@@ -38,6 +39,7 @@ BuildRequires:	perl-Locale-US
 BuildRequires:	perl-MRO-Compat >= 0.05
 BuildRequires:	perl-Module-Info
 BuildRequires:	perl-Module-Refresh >= 0.01
+BuildRequires:	perl-Module-Runtime-Conflicts
 BuildRequires:	perl-Package-DeprecationManager >= 0.11
 BuildRequires:	perl-Package-Stash >= 0.32
 BuildRequires:	perl-Package-Stash-XS >= 0.24
@@ -58,7 +60,8 @@ BuildRequires:	perl-Test-Pod-Coverage >= 1.04
 BuildRequires:	perl-Test-Requires >= 0.05
 BuildRequires:	perl-Test-Simple >= 0.94
 BuildRequires:	perl-Test-Spelling
-BuildRequires:	perl-Try-Tiny >= 0.02
+BuildRequires:	perl-Test-Warnings
+BuildRequires:	perl-Try-Tiny >= 0.17
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
 %endif
