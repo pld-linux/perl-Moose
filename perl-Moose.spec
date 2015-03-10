@@ -15,12 +15,14 @@ Source0:	http://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
 # Source0-md5:	1fa5fed0755cb272a21ff95f447d2681
 URL:		http://www.iinteractive.com/moose/
 BuildRequires:	perl-Dist-CheckConflicts >= 0.02
+BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
 BuildRequires:	perl-devel >= 1:5.8.3
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Carp) >= 1.22
 BuildRequires:	perl-CPAN-Meta-Check >= 0.007
+BuildRequires:	perl-CPAN-Meta-Requirements
 BuildRequires:	perl-Class-Load >= 0.09
 BuildRequires:	perl-Class-Load-XS >= 0.01
 BuildRequires:	perl-DBM-Deep >= 1.0003
@@ -31,6 +33,7 @@ BuildRequires:	perl-DateTime-Format-MySQL >= 0.01
 BuildRequires:	perl-Declare-Constraints-Simple
 BuildRequires:	perl-Devel-GlobalDestruction
 BuildRequires:	perl-Devel-OverloadInfo
+BuildRequires:	perl-Devel-StackTrace >= 1.33
 BuildRequires:	perl-Eval-Closure >= 0.04
 BuildRequires:	perl-File-Find-Rule
 BuildRequires:	perl-IO-String >= 0.01
@@ -39,6 +42,7 @@ BuildRequires:	perl-Locale-US
 BuildRequires:	perl-MRO-Compat >= 0.05
 BuildRequires:	perl-Module-Info
 BuildRequires:	perl-Module-Refresh >= 0.01
+BuildRequires:	perl-Module-Runtime >= 0.014
 BuildRequires:	perl-Module-Runtime-Conflicts
 BuildRequires:	perl-Package-DeprecationManager >= 0.11
 BuildRequires:	perl-Package-Stash >= 0.32
@@ -46,11 +50,12 @@ BuildRequires:	perl-Package-Stash-XS >= 0.24
 BuildRequires:	perl-Params-Coerce
 BuildRequires:	perl-Params-Util >= 1.00
 BuildRequires:	perl-Regexp-Common
-BuildRequires:	perl-Scalar-List-Utils >= 1.19
+BuildRequires:	perl-Scalar-List-Utils >= 1.33
 BuildRequires:	perl-Sub-Exporter >= 0.980
 BuildRequires:	perl-Sub-Name >= 0.05
 BuildRequires:	perl-Task-Weaken
 BuildRequires:	perl-Test-CheckDeps >= 0.007
+BuildRequires:	perl-Test-CleanNamespaces >= 0.13
 BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-Fatal >= 0.001
 BuildRequires:	perl-Test-Inline
@@ -60,7 +65,7 @@ BuildRequires:	perl-Test-Pod-Coverage >= 1.04
 BuildRequires:	perl-Test-Requires >= 0.05
 BuildRequires:	perl-Test-Simple >= 0.94
 BuildRequires:	perl-Test-Spelling
-BuildRequires:	perl-Test-Warnings
+BuildRequires:	perl-Test-Warnings >= 0.016
 BuildRequires:	perl-Try-Tiny >= 0.17
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
