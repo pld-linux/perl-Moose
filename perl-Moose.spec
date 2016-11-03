@@ -50,7 +50,7 @@ BuildRequires:	perl-Package-Stash-XS >= 0.24
 BuildRequires:	perl-Params-Coerce
 BuildRequires:	perl-Params-Util >= 1.00
 BuildRequires:	perl-Regexp-Common
-BuildRequires:	perl-Scalar-List-Utils >= 1.33
+BuildRequires:	perl-Scalar-List-Utils >= 1.45
 BuildRequires:	perl-Sub-Exporter >= 0.980
 BuildRequires:	perl-Sub-Name >= 0.05
 BuildRequires:	perl-Task-Weaken
