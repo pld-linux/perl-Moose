@@ -6,13 +6,13 @@
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	2.2014
-Release:	2
+Version:	2.2015
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
-# Source0-md5:	6d1e84977bc2a7d0e1111e16822fc250
-URL:		http://www.iinteractive.com/moose/
+# Source0-md5:	7a80e4e26d0839afe8c75bfc2e643e55
+URL:		https://moose.iinteractive.com/
 BuildRequires:	perl-Dist-CheckConflicts >= 0.02
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
@@ -39,8 +39,7 @@ BuildRequires:	perl-Devel-OverloadInfo >= 0.005
 BuildRequires:	perl-Devel-StackTrace >= 2.03
 BuildRequires:	perl-Eval-Closure >= 0.04
 BuildRequires:	perl-File-Find-Rule
-BuildRequires:	perl-IO-String >= 0.01
-BuildRequires:	perl-List-MoreUtils >= 0.28
+BuildRequires:	perl-HTTP-Message
 BuildRequires:	perl-Locale-US
 BuildRequires:	perl-MRO-Compat >= 0.05
 BuildRequires:	perl-Module-Refresh >= 0.01
@@ -52,9 +51,8 @@ BuildRequires:	perl-Package-Stash-XS >= 0.24
 BuildRequires:	perl-Params-Coerce
 BuildRequires:	perl-Params-Util >= 1.00
 BuildRequires:	perl-Regexp-Common
-BuildRequires:	perl-Scalar-List-Utils >= 1.45
+BuildRequires:	perl-Scalar-List-Utils >= 1.56
 BuildRequires:	perl-Sub-Exporter >= 0.980
-BuildRequires:	perl-Sub-Identify
 BuildRequires:	perl-Sub-Name >= 0.20
 BuildRequires:	perl-Test-CleanNamespaces >= 0.13
 BuildRequires:	perl-Test-Deep
@@ -62,6 +60,7 @@ BuildRequires:	perl-Test-Fatal >= 0.001
 BuildRequires:	perl-Test-Inline
 BuildRequires:	perl-Test-NoTabs
 BuildRequires:	perl-Test-Output >= 0.01
+BuildRequires:	perl-Test-Pod >= 1.41
 BuildRequires:	perl-Test-Pod-Coverage >= 1.04
 BuildRequires:	perl-Test-Requires >= 0.05
 BuildRequires:	perl-Test-Simple >= 0.96
@@ -69,7 +68,6 @@ BuildRequires:	perl-Test-Spelling
 BuildRequires:	perl-Test-Warnings >= 0.016
 BuildRequires:	perl-Try-Tiny >= 0.17
 BuildRequires:	perl-URI
-BuildRequires:	perl-libwww
 %endif
 Provides:	perl-Class-MOP = %{version}
 Obsoletes:	perl-Class-MOP < %{version}
