@@ -6,12 +6,12 @@
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	2.2015
-Release:	2
+Version:	2.2201
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
-# Source0-md5:	7a80e4e26d0839afe8c75bfc2e643e55
+# Source0-md5:	5ff10f1fcefc47ee8340375fb67b42a2
 URL:		https://moose.iinteractive.com/
 BuildRequires:	perl-Dist-CheckConflicts >= 0.02
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
@@ -53,7 +53,6 @@ BuildRequires:	perl-Params-Util >= 1.00
 BuildRequires:	perl-Regexp-Common
 BuildRequires:	perl-Scalar-List-Utils >= 1.56
 BuildRequires:	perl-Sub-Exporter >= 0.980
-BuildRequires:	perl-Sub-Name >= 0.20
 BuildRequires:	perl-Test-CleanNamespaces >= 0.13
 BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-Fatal >= 0.001
