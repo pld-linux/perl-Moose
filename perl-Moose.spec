@@ -1,17 +1,17 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define	pdir	Moose
 Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
-Version:	2.2201
-Release:	2
+Version:	2.2203
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
-# Source0-md5:	5ff10f1fcefc47ee8340375fb67b42a2
+Source0:	https://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
+# Source0-md5:	86165bb94edb65f8d4fbfc4cf4717655
 URL:		https://moose.iinteractive.com/
 BuildRequires:	perl-Dist-CheckConflicts >= 0.02
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
@@ -57,11 +57,11 @@ BuildRequires:	perl-Test-CleanNamespaces >= 0.13
 BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-Fatal >= 0.001
 BuildRequires:	perl-Test-Inline
+BuildRequires:	perl-Test-Needs >= 0.002010
 BuildRequires:	perl-Test-NoTabs
 BuildRequires:	perl-Test-Output >= 0.01
 BuildRequires:	perl-Test-Pod >= 1.41
 BuildRequires:	perl-Test-Pod-Coverage >= 1.04
-BuildRequires:	perl-Test-Requires >= 0.05
 BuildRequires:	perl-Test-Simple >= 0.96
 BuildRequires:	perl-Test-Spelling
 BuildRequires:	perl-Test-Warnings >= 0.016
