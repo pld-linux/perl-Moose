@@ -7,7 +7,7 @@ Summary:	Moose - A postmodern object system for Perl 5
 Summary(pl.UTF-8):	Moose - postmodernistyczny system obiektów dla Perla 5
 Name:		perl-Moose
 Version:	2.2203
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	https://www.cpan.org/authors/id/E/ET/ETHER/%{pdir}-%{version}.tar.gz
